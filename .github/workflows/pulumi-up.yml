@@ -2,9 +2,7 @@ name: Pulumi Preview
 
 on:
   push:
-    branches: [ '*' ]
-  pull_request:
-    branches: [ '*' ]
+    branches: [ 'main' ]
 
 jobs:
   pulumi-preview:
@@ -23,6 +21,6 @@ jobs:
         with:
           pulumi_version: 'latest'
 
-      - name: Run Pulumi Preview
-        run: pulumi preview --yes
+      - name: Run Pulumi up
+        run: pulumi up --yes
         working-directory: ./bigbro
