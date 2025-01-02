@@ -5,7 +5,7 @@ from variable import (
     availability_zones, 
     subnet_cidrs
 )
-from vpc.vpc import vpc
+from aws.vpc.vpc import vpc
 
 
 public_subnet_1 = aws.ec2.Subnet(
