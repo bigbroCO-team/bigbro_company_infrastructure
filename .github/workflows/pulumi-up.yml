@@ -21,10 +21,7 @@ jobs:
       - run: |
           pip install poetry
           poetry install
-      - uses: pulumi/actions@v3
-        with:
-          command: up
-          stack-name: Jueuunn7/bigbro/dev
-        env:
-          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
-        working-directory: ./bigbro
+      - name: Run Pulumi Preview
+        run: |
+          cd bigbro
+          pulumi up --yes
