@@ -22,6 +22,6 @@ jobs:
       - uses: pulumi/actions@v3
         with:
           command: preview
-          stack-name: Stacks/bigbro/dev
+          stack-name: Jueuunn7/bigbro/dev
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
