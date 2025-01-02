@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "bigbro-company-infrastructure"
+version = "0.1.0"
+description = ""
+authors = ["Jueuunn7 <wndmsrla1234@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+pulumi = "^3.144.1"
+pulumi-aws = "^6.66.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
