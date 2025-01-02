@@ -1,8 +1,8 @@
 import pulumi_aws as aws
 
 from variable import project_name
-from vpc.vpc import vpc, internet_gateway
-from vpc.subnets import (
+from aws.vpc.vpc import vpc, internet_gateway
+from aws.vpc.subnets import (
     public_subnet_1,
     public_private_1,
     public_subnet_2,
