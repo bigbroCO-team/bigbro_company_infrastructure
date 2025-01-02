@@ -18,11 +18,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Set up Pulumi
-        uses: pulumi/actions/setup-pulumi@v3
-        with:
-          pulumi_version: 'latest'
-
       - name: Run Pulumi Preview
         run: pulumi preview --yes
         working-directory: ./bigbro
