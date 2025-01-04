@@ -1,5 +1,3 @@
-import pulumi_aws as aws
-
 from aws.vpc.vpc import vpc, internet_gateway
 from aws.vpc.subnets import (
     public_subnet_1,
@@ -19,3 +17,5 @@ from aws.vpc.routes import (
 from aws.ec2.ec2 import ec2
 from aws.ec2.keypair import keypair
 from aws.ec2.securitgroup import security_group
+
+from aws.s3.s3 import bucket
