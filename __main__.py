@@ -19,3 +19,4 @@ from aws.ec2.keypair import keypair
 from aws.ec2.securitgroup import security_group
 
 from aws.s3.s3 import bucket
+from aws.s3.ownership import ownership_controls
