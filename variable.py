@@ -1,3 +1,5 @@
+import os
+
 project_name = 'bigbro'
 
 aws_region = 'ap-northeast-2'
@@ -13,3 +15,7 @@ subnet_cidrs = {
     'public2': '10.0.3.0/24',
     'private2': '10.0.4.0/24'
 }
+
+ubuntu24_ami = 'ami-0dc44556af6f78a7b'
+
+bigbro_public_key = os.environ.get('BIGBRO_PUBLIC_KEY')

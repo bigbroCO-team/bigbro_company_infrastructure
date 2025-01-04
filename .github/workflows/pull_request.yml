@@ -25,3 +25,4 @@ jobs:
           stack-name: jueuunn7/bigbro/dev
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+          BIGBRO_PUBLIC_KEY: ${{ secrets.BIGBRO_PUBLIC_KEY }}
