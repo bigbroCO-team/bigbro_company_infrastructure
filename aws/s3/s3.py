@@ -7,6 +7,7 @@ bucket = aws.s3.Bucket(
     'bigbro-s3',
     bucket='bigbro-s3',
     acl=aws.s3.CannedAcl.PUBLIC_READ,
+    object_ownership='ObjectWriter',
     tags={
         'Name': 'bigbro-ec2',
         'Project': project_name
