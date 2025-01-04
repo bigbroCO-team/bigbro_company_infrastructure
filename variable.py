@@ -18,4 +18,4 @@ subnet_cidrs = {
 
 ubuntu24_ami = 'ami-0dc44556af6f78a7b'
 
-bigbro_pub_keypair = os.environ.get('BIGBRO_PUB_KEYPAIR')
+bigbro_public_key = os.environ.get('BIGBRO_PUBLIC_KEY')
