@@ -18,4 +18,4 @@ from aws.vpc.routes import (
 
 from aws.ec2.ec2 import ec2
 from aws.ec2.keypair import keypair
-from aws.ec2.security_group import security_group
+from aws.ec2.securitgroup import security_group

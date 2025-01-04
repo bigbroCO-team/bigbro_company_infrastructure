@@ -1,7 +1,7 @@
 import pulumi_aws as aws
 
 from aws.ec2.keypair import keypair
-from aws.ec2.security_group import security_group
+from aws.ec2.securitgroup import security_group
 from aws.vpc.subnets import public_subnet_1
 from variable import project_name, ubuntu24_ami
 
