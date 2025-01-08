@@ -3,6 +3,7 @@ import pulumi_aws as aws
 from aws.vpc.vpc import vpc
 from variable import project_name
 
+
 security_group = aws.ec2.SecurityGroup(
     'bigbro-sg',
     vpc_id=vpc.id,
