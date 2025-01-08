@@ -19,7 +19,7 @@ public_subnet_1 = aws.ec2.Subnet(
     }
 )
 
-public_private_1 = aws.ec2.Subnet(
+private_subnet_1 = aws.ec2.Subnet(
     'private-subnet-1',
     vpc_id=vpc.id,
     cidr_block=subnet_cidrs['private1'],
@@ -41,7 +41,7 @@ public_subnet_2 = aws.ec2.Subnet(
     }
 )
 
-public_private_2 = aws.ec2.Subnet(
+private_subnet_2 = aws.ec2.Subnet(
     'private-subnet-2',
     vpc_id=vpc.id,
     cidr_block=subnet_cidrs['private2'],

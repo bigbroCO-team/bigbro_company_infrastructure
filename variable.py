@@ -19,3 +19,5 @@ subnet_cidrs = {
 ubuntu24_ami = 'ami-0dc44556af6f78a7b'
 
 bigbro_public_key = os.environ.get('BIGBRO_PUBLIC_KEY')
+
+ssl_certificate_arn = os.environ.get('SSL_CERTIFICATE_ARN')
