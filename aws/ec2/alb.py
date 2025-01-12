@@ -1,6 +1,6 @@
 import pulumi_aws as aws
 
-from aws.ec2 import ec2
+from aws.ec2 import ec2, security_group
 from aws.vpc import public_subnet_1, public_subnet_2, vpc
 from variable import project_name, ssl_certificate_arn
 
@@ -11,6 +11,7 @@ alb = aws.lb.LoadBalancer(
     load_balancer_type='application',
     subnets=[public_subnet_1, public_subnet_2],
     enable_deletion_protection=True,
+    security_groups=[security_group.id],
     tags={
         'Name': 'bigbro-elb',
         'Project': project_name
