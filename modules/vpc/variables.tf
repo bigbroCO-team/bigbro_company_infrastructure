@@ -1,9 +1,9 @@
 variable "vpc_cidr" {
-  type    = string
+  type = string
 }
 
 variable "project_name" {
-  type    = string
+  type = string
 }
 
 variable "public_subnet_1_cidr" {

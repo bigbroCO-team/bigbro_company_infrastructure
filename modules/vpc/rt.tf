@@ -1,9 +1,9 @@
 resource "aws_route_table" "public_subnet_1_rt" {
-  vpc_id      = aws_vpc.bigbro.id
+  vpc_id = aws_vpc.bigbro.id
 
   tags = {
-    Name      = "public_subnet_1_rt"
-    Project   = var.project_name
+    Name    = "public_subnet_1_rt"
+    Project = var.project_name
   }
 }
 
