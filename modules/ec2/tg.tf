@@ -1,8 +1,9 @@
 resource "aws_alb_target_group" "bigbro-stage-tg" {
-  name     = "bigbro-stage-tg"
-  port     = 80
-  protocol = "HTTP"
-  vpc_id   = var.bigbro_vpc_id
+  name        = "bigbro-stage-tg"
+  port        = 80
+  protocol    = "HTTP"
+  vpc_id      = var.bigbro_vpc_id
+  target_type = "ip"
 
   health_check {
     path                = "/health"
